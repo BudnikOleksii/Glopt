@@ -24,4 +24,11 @@
         margin: 0 auto;
         background-color: #dc5238;
     }
+    &_submit {
+        position: absolute;
+        bottom: 58px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 180px;
+    }
 }
