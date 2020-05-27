@@ -8,18 +8,18 @@
     &__line {
         width: 48%;
         height: 1px;
-        background-color: #ffffff;
+        background-color: $white;
     }
     &__circle {
         width: 10px;
         height: 10px;
-        background-color: #ffffff;
+        background-color: $white;
         border-radius: 100%;
     }
 }
 .redline {
     width: 148px;
     height: 1px;
-    margin: 25px auto 17px auto;
+    margin: 20px auto 17px auto;
     background-color: $main-color;
 }
