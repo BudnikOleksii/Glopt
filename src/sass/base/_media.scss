@@ -1,0 +1,51 @@
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .col-lg-1, .col-lg-3, .col-lg-4, .col-lg-5 {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    .nav > div {
+        &:nth-child(2) {
+            width: 53%;
+        }
+    }
+    .hidden-1024 {
+        display: none;
+    }
+    .visiable-1024 {
+        display: flex;
+    }
+    .menu {
+        margin: 0 0 15px 0;
+        &__item {
+            padding-right: 44px;
+        }
+    }
+    .delivery {
+        &-item {
+            width: 230px;
+            height: 355px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .menu__item {
+        padding-right: 17px;
+    }
+    .nav {
+        &__phone {
+            text-align: center;
+        }
+    }
+    .nav > div {
+        &:nth-child(2) {
+            display: none;
+        }
+    }
+}
