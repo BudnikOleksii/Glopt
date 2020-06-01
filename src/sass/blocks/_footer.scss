@@ -1,0 +1,33 @@
+.footer {
+    min-height: 201px;
+    background-color: $bg-color;
+    padding: 24px 0 36px 0;
+    &__official {
+        padding-left: 43px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    &__wrapper {
+        margin-top: 26px;
+        padding-top: 19px;
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid grey;
+    }
+    &__links {
+        opacity: 0.6;
+        color: $white;
+        font-size: 13px;
+        font-weight: 300;
+    }
+    &__link {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        &:hover {
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+}
