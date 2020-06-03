@@ -9,6 +9,10 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $white;
+    &:hover {
+        background-color: darken($main-color, 10%);
+        box-shadow: 3px 3px 20px $main-color;
+    }
     &_count {
         display: block;
         margin: 39px auto 0 auto;
@@ -18,11 +22,6 @@
         line-height: 17px;
         font-weight: 700;
         border-radius: 28px;
-    }
-    &_more {
-        display: block;
-        margin: 0 auto;
-        background-color: #dc5238;
     }
     &_submit {
         position: absolute;
@@ -43,5 +42,24 @@
         line-height: 17px;
         font-weight: 700;
         border-radius: 23px;
+    }
+}
+
+.btn_more {
+    display: block;
+    margin: 0 auto;
+    background-color: #dc5238;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 22px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+    &:hover {
+        background-color: darken(#dc5238, 10%);
+        box-shadow: 3px 3px 20px #dc5238;
     }
 }

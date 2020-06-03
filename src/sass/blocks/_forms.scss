@@ -18,6 +18,9 @@
         padding: 16px 0 16px 27px;
         border: 2px solid $borders-color;
         border-radius: 23px;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+        }
     }
 }
 
