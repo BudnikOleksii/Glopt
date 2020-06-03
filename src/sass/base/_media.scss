@@ -120,6 +120,9 @@
             padding: 20px 0;
         }
     }
+    .modal__form {
+        padding: 0;
+    }
     .questions__block {
         width: 100%;
         textarea {
@@ -388,7 +391,7 @@
             margin-top: 10px;
         }
     }
-    .button_submit {
+    .button_submit, .button_modal {
         width: 250px;
     }
     .work__item {
@@ -401,5 +404,24 @@
     .footer__wrapper {
         flex-direction: column;
         align-items: center;
+    }
+    .modal {
+        width: 280px;
+        min-height: auto;
+        padding: 10px;
+        &__form {
+            margin: 10px 0;
+        }
+        &__subtitle {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            top: -19px;
+            right: 0px;
+        }
     }
 }
