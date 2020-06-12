@@ -9,13 +9,11 @@
         text-align: center;
     }
     &__logo {
+        @include flex-centered;
         position: absolute;
         top: 90px;
         left: 50%;
         transform: translateX(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0 auto; 
         width: 102px;
         height: 102px;

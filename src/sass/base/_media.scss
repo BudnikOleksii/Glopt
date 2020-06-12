@@ -116,7 +116,7 @@
         input {
             margin: 2px 0;
         }
-        &_plus {
+        &--plus {
             padding: 20px 0;
         }
     }
@@ -129,10 +129,10 @@
             width: 270px;
         }
     }
-    .button_submit {
+    .button--submit {
         width: 270px;
         bottom: 10px;
-        &_end {
+        &--end {
             position: relative;
             margin-top: 15px;
         }
@@ -391,7 +391,7 @@
             margin-top: 10px;
         }
     }
-    .button_submit, .button_modal {
+    .button--submit, .button--modal {
         width: 250px;
     }
     .work__item {

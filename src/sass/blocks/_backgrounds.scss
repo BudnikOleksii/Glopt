@@ -1,15 +1,15 @@
 .background {
     padding: 58px 0 75px 0;
     min-height: 342px;
-    &_agent {
+    &--agent {
         background: url(../img/bg_2.jpg) center center/cover no-repeat;
     }
-    &_managers {
+    &--managers {
         background: url(../img/bg_3.jpg) center center/cover no-repeat;
     }
     &__header {
         margin-top: 20px;
-        color: #ffffff;
+        color: $white;
         font-size: 26px;
         font-weight: 700;
         line-height: 23px;
@@ -17,7 +17,7 @@
     }
     &__descr {
         margin-top: 22px;
-        color: #ffffff;
+        color: $white;
         font-size: 19px;
         font-weight: 300;
         line-height: 27px;
@@ -25,9 +25,7 @@
     }
 }
 .round {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-centered;
     margin: 0 auto;
     width: 102px;
     height: 102px;
