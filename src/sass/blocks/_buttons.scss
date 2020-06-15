@@ -29,10 +29,10 @@
     &--more {
         display: block;
         margin: 0 auto;
-        background-color: #dc5238;
+        background-color: $red-dark;
         &:hover {
-            background-color: darken(#dc5238, 10%);
-            box-shadow: 3px 3px 20px #dc5238;
+            background-color: darken($red-dark, 10%);
+            box-shadow: 3px 3px 20px $red-dark;
         }
     }
     &--submit {
@@ -52,7 +52,6 @@
         height: 47px;
         font-size: 15px;
         line-height: 17px;
-        font-weight: 700;
         border-radius: 23px;
     }
 }
