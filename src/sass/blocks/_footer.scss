@@ -2,6 +2,7 @@
     min-height: 201px;
     background-color: $bg-color;
     padding: 24px 0 36px 0;
+
     &__official {
         padding-left: 43px;
         color: $white;
@@ -9,6 +10,7 @@
         font-weight: 700;
         line-height: 20px;
     }
+
     &__wrapper {
         margin-top: 26px;
         padding-top: 19px;
@@ -16,15 +18,22 @@
         justify-content: space-between;
         border-top: 1px solid grey;
     }
+
     &__links {
         opacity: 0.6;
         color: $white;
         font-size: 13px;
         font-weight: 300;
     }
+
     &__link {
-        text-decoration: none;
-        color: rgba($white, 0.6);
+        &,
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: rgba($white, 0.6);
+        }
+        
         &:hover {
             color: $main-color;
             text-decoration: underline;

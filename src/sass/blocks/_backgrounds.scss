@@ -1,12 +1,15 @@
 .background {
     padding: 58px 0 75px 0;
     min-height: 342px;
+    
     &--agent {
         background: url(../img/bg_2.jpg) center center/cover no-repeat;
     }
+    
     &--managers {
         background: url(../img/bg_3.jpg) center center/cover no-repeat;
     }
+    
     &__header {
         margin-top: 20px;
         color: $white;
@@ -15,6 +18,7 @@
         line-height: 23px;
         text-align: center;
     }
+    
     &__descr {
         margin-top: 22px;
         color: $white;
@@ -24,6 +28,7 @@
         text-align: center;
     }
 }
+
 .round {
     @include flex-centered;
     margin: 0 auto;

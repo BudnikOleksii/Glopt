@@ -1,37 +1,45 @@
 .feed {
     padding: 51px 0 65px 0;
 }
+
 .carousel {
     width: 601px;
     position: relative;
     margin: 0 auto;
+    
     &__inner {
         position: relative;
         width: 100%;
         text-align: center;
         overflow: hidden;
     }
+    
     &__slides {
         width: 300%;
         // width: 100%;
         display: flex;
     }
+    
     &__item {
         width: 100%;
     }
+    
     &__prev {
         position: absolute;
         top: 60px;
         left: 188px;
     }
+    
     &__next {
         position: absolute;
         top: 60px;
         right: 188px;
     }
+    
     &__img {
         margin: 25px 0 15px 0;
     }
+    
     &__name {
         font-size: 18px;
         line-height: 22px;

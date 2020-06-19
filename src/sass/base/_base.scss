@@ -1,3 +1,8 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 .container {
     max-width: 1140px;
     padding-right: 15px;
@@ -5,6 +10,7 @@
     margin-right: auto;
     margin-left: auto;
 }
+
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -44,4 +50,8 @@
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
 }  
-  
+
+::selection {
+    background-color: $grey-dark;
+    color: $white;
+}

@@ -4,11 +4,13 @@
     width: 100%;
     height: 166px;
     border: 2px solid $borders-color;
+    
     &--plus {
         margin-top: 18px;
         height: auto;
         border:none;
     }
+
     input {
         margin: 0 2px;
         width: 270px;
@@ -16,18 +18,20 @@
         padding: 16px 0 16px 27px;
         border: 2px solid $borders-color;
         border-radius: 23px;
-        &:hover {
-            box-shadow: 3px 3px 20px $main-color;
+        transition: all .2s;
+
+        &:hover,
+        &:focus:invalid {
+            box-shadow: $shadow-default;
         }
+
         &:active, &:focus {
             outline: none;
         }
+
         &:focus {
             box-shadow: 0 1rem 2rem rgba($black, .1);
-            box-shadow: 3px 3px 20px $green-ok;
-        }
-        &:focus:invalid {
-            box-shadow: 3px 3px 20px $main-color;
+            box-shadow: $shadow-green;
         }
     }
 }
@@ -35,12 +39,14 @@
 .questions {
     padding: 62px 0 79px 0;
     background: url(../img/bg_4.jpg) center center/cover no-repeat;
+
     &__block {
         width: 896px;
         margin: 0 auto;
         min-height: 297px;
         background-color: rgba($white, 0.7);
         position: relative;
+
         textarea {
             display: block;
             margin: 8px auto 17px auto;
@@ -51,11 +57,13 @@
             border-radius: 7px;
             background-color: $white;
             resize: none;
+
             &:active, &:focus {
                 outline: none;
             }
         }
     }
+
     &__header {
         height: 68px;
         background-color: $bg-color;
@@ -65,6 +73,7 @@
         font-weight: 700;
         text-transform: uppercase;
         text-align: center;
+
         div {
             font-size: 14px;
             font-weight: 400;
@@ -76,17 +85,22 @@
     flex-direction: column;
     margin-top: 10px;
     min-height: 255px;
+
     input {
         margin: 7px 0;
+        transition: all .2s;
+
         &:active, &:focus {
             outline: none;
         }
+
         &:focus {
             box-shadow: 0 1rem 2rem rgba($black, .1);
-            box-shadow: 3px 3px 20px $green-ok;
+            box-shadow: $shadow-green;
         }
+
         &:focus:invalid {
-            box-shadow: 3px 3px 20px $main-color;
+            box-shadow: $shadow-default;
         }
     }
 }

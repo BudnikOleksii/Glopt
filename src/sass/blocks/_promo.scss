@@ -2,9 +2,11 @@
     min-height: 680px;
     padding: 23px 0 81px 0;
     background: url(../img/bg_1.jpg) center center/cover no-repeat;
+
     &__item {
         text-align: center;
     }
+
     &__text {
         margin-top: 13px;
         font-size: 16px;
@@ -13,33 +15,44 @@
         color: $white;
     }
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     margin-bottom: 0;
     margin-right: 45px;
+
     &__item {
         border-right: 1px dotted $white;
         padding-right: 11px;
+
         &:last-child {
             border: none;
         }
     }
+
     &__link {
-        font-size: 15px;
-        // line-height: 16px;
-        font-weight: 400;
-        color: $white;
+        &,
+        &:link,
+        &:visited {
+            font-size: 15px;
+            // line-height: 16px;
+            font-weight: 400;
+            color: $white;
+        }
+        
         &:hover {
             color: $main-color;
         }
     }
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     &__phone {
         text-align: right;
         font-size: 14px;
@@ -48,23 +61,28 @@
         color: $white;
         margin-right: 10px;
     }
+    
     &__number {
         display: block;
         font-size: 19px;
         font-weight: 700;
         color: $white;
+        
         &:hover {
             color: $main-color;
         }
     }
 }
+
 .nav > div {
     &:nth-child(2) {
         width: 60%;
     }
 }
+
 .header {
     text-align: center;
+    
     &__subheader {
         color: $white;
         font-size: 24px;
@@ -72,6 +90,7 @@
         font-weight: 300;
         margin: 9px 0 0 0;
     }
+    
     &__header {
         color: $main-color;
         font-family: $font;
@@ -81,6 +100,7 @@
         text-transform: uppercase;
         margin: 10px 0 0 0;
     }
+    
     &__descr {
         color: $white;
         font-family: $font;
@@ -90,6 +110,7 @@
         text-transform: uppercase;
     }
 }
+
 .visiable-1024 {
     display: none;
 }

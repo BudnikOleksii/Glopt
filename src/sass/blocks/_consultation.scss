@@ -1,6 +1,7 @@
 .consultation {
     position: relative;
     padding: 50px 0 80px 0;
+    
     &__title {
         color: $grey-dark;
         font-size: 28px;
@@ -8,6 +9,7 @@
         line-height: 23px;
         text-align: center;
     }
+    
     &__logo {
         @include flex-centered;
         position: absolute;

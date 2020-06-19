@@ -2,20 +2,24 @@
     width: 160px;
     height: 45px;
     border: none;
-    border-radius: 22px;
+    border-radius: 28px;
     font-size: 12px;
     line-height: 22px;
     font-weight: 400;
     text-transform: uppercase;
     color: $white;
     background-color: $main-color;
+    transition: all .2s;
+
     &:active, &:focus {
         outline: none;
     }
+
     &:hover {
         background-color: darken($main-color, 7%);
-        box-shadow: 3px 3px 20px $main-color;
+        box-shadow: $shadow-default;
     }
+
     &--count {
         display: block;
         margin: 39px auto 0 auto;
@@ -24,27 +28,31 @@
         font-size: 15px;
         line-height: 17px;
         font-weight: 700;
-        border-radius: 28px;
     }
+
     &--more {
         display: block;
         margin: 0 auto;
         background-color: $red-dark;
+
         &:hover {
             background-color: darken($red-dark, 10%);
-            box-shadow: 3px 3px 20px $red-dark;
+            box-shadow: $shadow-dark-red;
         }
     }
+
     &--submit {
         position: absolute;
         bottom: 58px;
         left: 50%;
         transform: translateX(-50%);
         width: 180px;
+
         &--end {
             bottom: 25px;
         }
     }
+
     &--modal {
         margin-top: 14px;
         margin-bottom: 7px;
@@ -52,7 +60,5 @@
         height: 47px;
         font-size: 15px;
         line-height: 17px;
-        border-radius: 23px;
     }
 }
-

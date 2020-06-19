@@ -5,11 +5,13 @@
     width: 809px;
     height: 10px;
     margin: 38px auto 35px auto;
+    
     &__line {
         width: 48%;
         height: 1px;
         background-color: $white;
     }
+    
     &__circle {
         width: 10px;
         height: 10px;
@@ -17,9 +19,11 @@
         border-radius: 100%;
     }
 }
+
 .redline {
     width: 148px;
     height: 1px;
     margin: 20px auto 17px auto;
     background-color: $main-color;
+    
 }
